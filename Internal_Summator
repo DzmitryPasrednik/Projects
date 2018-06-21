@@ -18,7 +18,7 @@ def digit_sum(n): #It analyses an input and return a sum of all numbers in it. f
    
 while True: #it loops the script
     try:
-        to_be(n)
+        digit_sum(n)
     except ValueError:
         print ("It is not an integer! Please enter an integer")
     else: #should exit out the script. Doesn'work. Why?
