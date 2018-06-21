@@ -1,0 +1,27 @@
+"""This script sums all numbers in an integer."""
+
+
+try:
+    input = raw_input
+except NameError:
+    pass
+n=input
+
+
+        
+def digit_sum(n): #It analyses an input and return a sum of all numbers in it. for 1234: 1+2+3+4=10
+    n = input("Enter an integer: ")
+    l=list(str(abs(int(n))))
+    l = [ int(x) for x in l]
+    s = sum(l)
+    print(s)
+   
+while True: #it loops the script
+    try:
+        to_be(n)
+    except ValueError:
+        print ("It is not an integer! Please enter an integer")
+    else: #should exit out the script. Doesn'work. Why?
+        if n == "stop":
+            print ("bye!")
+            break
