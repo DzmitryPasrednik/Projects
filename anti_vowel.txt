@@ -1,0 +1,14 @@
+n=input("Enter a text: ")
+vowel_list = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+
+def anti_vowel(n):
+    lst = list(n)
+    for i in lst:
+        for j in vowel_list:
+            while i==j:
+                lst.remove(i)
+                z=''.join([j for j in lst if j not in vowel_list])
+                break
+    print(z)             
+        
+anti_vowel(n)
